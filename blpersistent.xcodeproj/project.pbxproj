@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		13675064214F7229003D344D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675063214F7229003D344D /* AppDelegate.swift */; };
-		13675066214F7229003D344D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675065214F7229003D344D /* ViewController.swift */; };
 		13675069214F7229003D344D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13675067214F7229003D344D /* Main.storyboard */; };
 		1367506B214F722A003D344D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1367506A214F722A003D344D /* Assets.xcassets */; };
 		1367506E214F722A003D344D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1367506C214F722A003D344D /* LaunchScreen.storyboard */; };
 		13675079214F722A003D344D /* blpersistentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675078214F722A003D344D /* blpersistentTests.swift */; };
 		13675084214F722A003D344D /* blpersistentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675083214F722A003D344D /* blpersistentUITests.swift */; };
+		13675092214F726B003D344D /* HomeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675091214F726B003D344D /* HomeTableVC.swift */; };
+		13675094214F7291003D344D /* AddEditTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13675093214F7291003D344D /* AddEditTableVC.swift */; };
+		13675097214F72AC003D344D /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13675095214F72AC003D344D /* BucketList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		13675060214F7229003D344D /* blpersistent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blpersistent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13675063214F7229003D344D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13675065214F7229003D344D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13675068214F7229003D344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1367506A214F722A003D344D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1367506D214F722A003D344D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		1367507F214F722A003D344D /* blpersistentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blpersistentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13675083214F722A003D344D /* blpersistentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blpersistentUITests.swift; sourceTree = "<group>"; };
 		13675085214F722A003D344D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13675091214F726B003D344D /* HomeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableVC.swift; sourceTree = "<group>"; };
+		13675093214F7291003D344D /* AddEditTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableVC.swift; sourceTree = "<group>"; };
+		13675096214F72AC003D344D /* BucketListItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketListItem.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				13675063214F7229003D344D /* AppDelegate.swift */,
-				13675065214F7229003D344D /* ViewController.swift */,
+				13675091214F726B003D344D /* HomeTableVC.swift */,
+				13675093214F7291003D344D /* AddEditTableVC.swift */,
 				13675067214F7229003D344D /* Main.storyboard */,
+				13675095214F72AC003D344D /* BucketList.xcdatamodeld */,
 				1367506A214F722A003D344D /* Assets.xcassets */,
 				1367506C214F722A003D344D /* LaunchScreen.storyboard */,
 				1367506F214F722A003D344D /* Info.plist */,
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13675066214F7229003D344D /* ViewController.swift in Sources */,
+				13675097214F72AC003D344D /* BucketList.xcdatamodeld in Sources */,
+				13675092214F726B003D344D /* HomeTableVC.swift in Sources */,
+				13675094214F7291003D344D /* AddEditTableVC.swift in Sources */,
 				13675064214F7229003D344D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZ5399F5J7;
 				INFOPLIST_FILE = blpersistent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KZ5399F5J7;
 				INFOPLIST_FILE = blpersistent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +588,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13675095214F72AC003D344D /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13675096214F72AC003D344D /* BucketListItem.xcdatamodel */,
+			);
+			currentVersion = 13675096214F72AC003D344D /* BucketListItem.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13675058214F7229003D344D /* Project object */;
 }
